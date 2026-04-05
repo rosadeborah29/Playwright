@@ -1,0 +1,22 @@
+# 1. Generic Assertion.
+# Assertions on variables or values, not directly tied to UI elements.
+# toBe – Checks strict equality (===) between two values.
+# toEqual – Checks deep equality of objects/arrays/values.
+# toContain – Checks whether a value/substring exists inside an array/string.
+# toBeTruthy – Passes if the value is considered true in JavaScript.
+# toBeFalsy – Passes if the value is considered false in JavaScript.
+# toBeGreaterThan – Checks if a number is greater than another number.
+
+# 2. Locator Assertion:
+# Assertions performed on UI elements indentified using locators
+# - toBeVisible()- checks if the element is visible on the page.
+# - toBeEnabled()- checks if the element is enabled and can be interacted with.
+# - toBeEditable()- checks if the element is editable, such as input fields.
+
+Note: 
+1. Refer playwright.dev/docs/test-assertions.
+2. Soft assertion won't stop inbetween if there is any error.
+    eg:
+      await expect.soft(page locator(`//input[@id="username"]`)).toBeDisabled({timeout:8000});
+3. Generic Assertion:
+    There is no auto retrying assertions
