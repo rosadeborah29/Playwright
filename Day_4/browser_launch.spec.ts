@@ -16,5 +16,5 @@ test(`Test to launch a browser`, async () => {
     1. pending
     2. resolve --> it has completed the action to be performed
     3. rejected */
-
+    
 })
